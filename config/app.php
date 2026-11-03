@@ -54,6 +54,9 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    // Keep the frontend on its local demo adapter until the API is available.
+    'frontend_mock' => (bool) env('FRONTEND_MOCK', true),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

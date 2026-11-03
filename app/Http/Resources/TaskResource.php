@@ -2,7 +2,10 @@
 
 namespace App\Http\Resources;
 
+<<<<<<< HEAD
+=======
 use Carbon\Carbon;
+>>>>>>> 2b87582f87b0313a99d908e7d6d1a91855691c48
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

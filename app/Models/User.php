@@ -18,6 +18,8 @@ class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasApiTokens, HasFactory, Notifiable;
+<<<<<<< HEAD
+=======
 
     /**
      * Get the tasks for the user.
@@ -26,6 +28,7 @@ class User extends Authenticatable
     {
         return $this->hasMany(Task::class);
     }
+>>>>>>> 2b87582f87b0313a99d908e7d6d1a91855691c48
 
     /**
      * Get the attributes that should be cast.
@@ -38,5 +41,13 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Get the tasks for the user.
+     */
+    public function tasks(): HasMany
+    {
+        return $this->hasMany(Task::class);
     }
 }
